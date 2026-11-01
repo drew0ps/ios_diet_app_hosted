@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diet App - Support</title>
+<style>
+  :root {
+    --base: #1E1E2E; --card: #282839; --text: #CDD6F4; --dim: #A6ADC8;
+    --sapphire: #74C7EC; --mauve: #CBA6F7; --green: #A6E3A1;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --base: #EFF1F5; --card: #FFFFFF; --text: #4C4F69; --dim: #6C6F85;
+      --sapphire: #209FB5; --mauve: #8839EF; --green: #40A02B;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 20px 80px;
+    background: var(--base); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header svg { width: 44px; height: 44px; flex: none; }
+  header .app { font-size: 15px; font-weight: 600; color: var(--dim); letter-spacing: 0.02em; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 12px 0 4px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; color: var(--mauve); }
+  p { margin: 0 0 14px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--sapphire); }
+  .mail {
+    display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 12px;
+    background: var(--mauve); color: #11111B; font-weight: 600; text-decoration: none;
+  }
+  nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--card); font-size: 15px; }
+  nav a + a::before { content: "·"; margin: 0 10px; color: var(--dim); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 1024 1024" role="img" aria-label="Diet App mark">
+      <g fill="#74C7EC">
+        <rect x="187" y="200" width="30" height="200" rx="15"/>
+        <rect x="227" y="200" width="30" height="200" rx="15"/>
+        <rect x="267" y="200" width="30" height="200" rx="15"/>
+        <rect x="307" y="200" width="30" height="200" rx="15"/>
+        <polygon points="185,395 339,395 297,500 227,500"/>
+        <rect x="227" y="495" width="70" height="335" rx="35"/>
+      </g>
+      <g fill="#CBA6F7">
+        <path d="M455,200 L573,248 L573,580 L455,580 C455,470 445,295 455,200 Z"/>
+        <rect x="479" y="575" width="66" height="255" rx="33"/>
+      </g>
+      <g fill="#A6E3A1">
+        <ellipse cx="762" cy="300" rx="58" ry="100"/>
+        <rect x="731" y="390" width="62" height="440" rx="31"/>
+      </g>
+    </svg>
+    <span class="app">Diet App</span>
+  </header>
+
+  <h1>Support</h1>
+
+  <h2>Contact</h2>
+  <p>Questions, problems or ideas about Diet App - email and you'll hear back, usually within a few
+  days:</p>
+  <p><a class="mail" href="mailto:drewops@proton.me?subject=Diet%20App%20support">drewops@proton.me</a></p>
+
+  <h2>Quicker answers</h2>
+  <ul>
+    <li>What the app does with your data (nothing it shouldn't): the
+      <a href="index.html">privacy policy</a>.</li>
+    <li>Food lookups: turn either database off under <strong>Settings &rsaquo; Food Data
+      Sources</strong>; the app then looks up foods only in its on-device catalog.</li>
+    <li>Your data: export it as CSV or JSON, or delete everything, under <strong>Settings &rsaquo;
+      Data</strong>. Deleting the app also removes all of it.</li>
+    <li>Apple Health: turn it on or off in the Health app.</li>
+  </ul>
+
+  <h2>When you write</h2>
+  <ul>
+    <li>The app version, shown in Settings &rsaquo; About in the app.</li>
+    <li>Your device and iOS version, and what you tried and saw.</li>
+    <li>Screenshots help a lot, if it looks wrong.</li>
+  </ul>
+
+  <nav>
+    <a href="index.html">Privacy Policy</a>
+  </nav>
+</main>
+</body>
+</html>
