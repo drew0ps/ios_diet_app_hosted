@@ -30,6 +30,8 @@
   .date { color: var(--dim); font-size: 15px; margin: 0 0 32px; }
   h2 { font-size: 20px; margin: 36px 0 8px; color: var(--mauve); }
   p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
   a { color: var(--sapphire); }
   nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--card); font-size: 15px; }
   nav a + a::before { content: "·"; margin: 0 10px; color: var(--dim); }
@@ -60,7 +62,7 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="date">Effective 1 November 2026</p>
+  <p class="date">Effective 2 November 2026</p>
 
   <h2>The short version</h2>
   <p>Diet App doesn't collect your data. Your nutrition log, targets and body measurements stay on
@@ -77,18 +79,28 @@
   <p>When you search the online food database, scan a product barcode, or log a meal by description,
   the food text or barcode you entered is sent over the network to look up nutritional information.
   Barcode scans query Open Food Facts (world.openfoodfacts.org) first and fall back to the USDA
-  FoodData Central database (api.nal.usda.gov); text searches and meal descriptions use USDA
-  FoodData Central. These requests contain only the food names or barcodes you ask about — not your
+  FoodData Central database (api.nal.usda.gov); text searches and meal descriptions also query Open
+  Food Facts first, with USDA FoodData Central as the fallback. These requests contain only the food names or barcodes you ask about — not your
   food log, body measurements or any other data in the app. You can turn each database off under
   Settings &rsaquo; Food Data Sources; the app then looks up foods only in its on-device catalog.
   Each provider's own privacy policy applies to its service.</p>
 
   <h2>Apple Health</h2>
-  <p>Only if you turn it on, the app can read body weight, body fat percentage and height from Apple
-  Health, and write dietary energy, protein, carbohydrates and fat to Apple Health. Health data is
-  only used to power the app's nutrition tracking, is never used for advertising or marketing, never
-  sold, and never shared with anyone; it isn't sent to the developer. You can turn this off at any
-  time in the Health app.</p>
+  <p>Only if you turn it on in Settings &rsaquo; Apple Health, the app connects to Apple Health. You
+  choose exactly which data it may read and write in the Health app.</p>
+  <ul>
+    <li><strong>It writes:</strong> the foods you log (dietary energy, protein, carbohydrates, fat
+    and, where known, fiber, sugar, sodium, saturated fat, cholesterol, caffeine, vitamins and
+    minerals), the water you log, and the weight and body fat you enter in the app.</li>
+    <li><strong>It reads:</strong> weight and body fat recorded by other apps and devices, which are
+    added to your measurements in the app; active energy, to add exercise calories to your daily
+    target if you switch that on; and blood pressure, blood glucose and sleep, shown on the Progress
+    tab.</li>
+  </ul>
+  <p>Health data is only used to power the app's nutrition and progress tracking. It is never used
+  for advertising or marketing, never sold, never shared with anyone, never sent to the developer,
+  and never stored in iCloud by the app. You can turn this off at any time in Settings or in the
+  Health app.</p>
 
   <h2>Apple Intelligence</h2>
   <p>Describing a meal in natural language uses Apple Intelligence on your device. Your food
@@ -103,10 +115,15 @@
   Apple Intelligence to suggest foods and portions, which you can edit before anything is saved.
   Images are never stored by the app and are never sent to the developer or to third parties.</p>
 
-  <h2>Exports</h2>
-  <p>CSV and JSON files are created on your device only when you choose to export. Where you send
-  them is up to you, and the app or service you share them with handles them under its own privacy
-  policy.</p>
+  <h2>Reminders, widgets and Siri</h2>
+  <p>Reminders are local notifications scheduled on your device. Widgets and Siri or Shortcuts
+  actions read today's totals from the app on your device; nothing is sent to the developer.</p>
+
+  <h2>Exports and backups</h2>
+  <p>CSV and JSON exports and full backups are created on your device only when you choose to. Where
+  you save or send them is up to you — for example iCloud Drive or another app — and that service
+  handles them under its own privacy policy. A backup contains everything stored in the app,
+  including weight and body fat imported from Apple Health, so keep it somewhere private.</p>
 
   <h2>Children</h2>
   <p>Diet App isn't directed at children under 13.</p>
