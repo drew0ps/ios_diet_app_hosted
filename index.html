@@ -62,28 +62,52 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="date">Effective 2 November 2026</p>
+  <p class="date">Effective 4 November 2026</p>
 
   <h2>The short version</h2>
   <p>DietApp Pro doesn't collect your data. Your nutrition log, targets and body measurements stay on
-  your device. There are no accounts, no ads, no analytics and no tracking, and the app contains no
-  third-party code that collects data.</p>
+  your device and, if you use iCloud, in your own private iCloud account. There are no accounts, no
+  ads, no analytics and no tracking, and the app contains no third-party code that collects
+  data.</p>
 
   <h2>What the app stores</h2>
   <p>The app stores your food log, calorie and macro targets, saved foods, meals and recipes, body
-  measurements and settings. Everything is kept locally on your device. The developer has no access
-  to it. You can delete your data at any time in the app under Settings &rsaquo; Data, or by
-  deleting the app.</p>
+  measurements and settings on your device. The developer has no access to it.</p>
 
-  <h2>Food database lookups</h2>
-  <p>When you search the online food database, scan a product barcode, or log a meal by description,
-  the food text or barcode you entered is sent over the network to look up nutritional information.
-  Barcode scans query Open Food Facts (world.openfoodfacts.org) first and fall back to the USDA
-  FoodData Central database (api.nal.usda.gov); text searches and meal descriptions also query Open
-  Food Facts first, with USDA FoodData Central as the fallback. These requests contain only the food names or barcodes you ask about — not your
-  food log, body measurements or any other data in the app. You can turn each database off under
-  Settings &rsaquo; Food Data Sources; the app then looks up foods only in its on-device catalog.
-  Each provider's own privacy policy applies to its service.</p>
+  <h2>iCloud sync</h2>
+  <p>When you're signed in to iCloud, the app syncs this data through your private iCloud database
+  (Apple's CloudKit) to your other devices signed in to the same Apple Account. It is stored in your
+  iCloud account under Apple's privacy policy, not on servers the developer controls, and the
+  developer can't access it. Weight and body fat read from Apple Health are never synced: they stay
+  on each device, which reads them from Health itself. Settings &rsaquo; iCloud shows whether sync
+  is on.</p>
+  <p>Settings that affect your day's numbers — training-day extras, the water and fasting goals,
+  and meal order and visibility — also sync through your iCloud account's key-value storage, which
+  only you and your devices can read.</p>
+  <p>You can delete your data at any time under Settings &rsaquo; Data &rsaquo; Delete All Data,
+  which removes it from this device, your other synced devices and iCloud. Deleting the app removes
+  it from that device only; data in iCloud stays until you delete it in the app or in your iCloud
+  settings.</p>
+
+  <h2>Online food databases</h2>
+  <p>To look up nutritional information, the app uses two third-party food databases:</p>
+  <ul>
+    <li><strong>Open Food Facts</strong> (world.openfoodfacts.org), a community-run open database
+    of food products. <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy
+    policy</a>.</li>
+    <li><strong>USDA FoodData Central</strong> (api.nal.usda.gov), the U.S. Department of
+    Agriculture's food composition database. <a href="https://www.usda.gov/privacy-policy">USDA
+    privacy policy</a>.</li>
+  </ul>
+  <p>When you search for a food, scan a product barcode, or log a meal by description, the food
+  text or barcode is sent to Open Food Facts first, with USDA FoodData Central as the fallback.
+  These requests contain only the food names or barcodes you ask about, and the app's name and
+  version. They never contain your food log, targets, body measurements, Health data or anything
+  else stored in the app. Like any internet request, they reveal your device's IP address to the
+  provider; neither provider receives an account, name or other identifier from the app.</p>
+  <p>You can turn each database off under Settings &rsaquo; Food Data Sources; the app then looks
+  up foods only in its on-device catalog. Each provider's own privacy policy applies to its
+  service.</p>
 
   <h2>Apple Health</h2>
   <p>Only if you turn it on in Settings &rsaquo; Apple Health, the app connects to Apple Health. You
@@ -99,8 +123,8 @@
   </ul>
   <p>Health data is only used to power the app's nutrition and progress tracking. It is never used
   for advertising or marketing, never sold, never shared with anyone, never sent to the developer,
-  and never stored in iCloud by the app. You can turn this off at any time in Settings or in the
-  Health app.</p>
+  and never stored in iCloud by the app: weight and body fat read from Health stay on the device.
+  You can turn this off at any time in Settings or in the Health app.</p>
 
   <h2>Apple Intelligence</h2>
   <p>Describing a meal in natural language uses Apple Intelligence on your device. Your food
